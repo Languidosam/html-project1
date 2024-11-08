@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpongeBob SquarePants</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="spongebob-icon.ico" type="image/x-icon">
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            background-image: url('Bck.webp');
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed; 
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: black;
+            color: #2a2a2a;
+            text-align: center;
+            padding: 50px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            font-family: 'Impact', sans-serif; 
+        }
+
+        header h1 {
+            font-size: 4em;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: #fff;
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            background-color: #2a2a2a;
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 0 30px;
+            padding: 15px 30px;
+            background-color: black;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ff9900;
+            transform: scale(1.1);
+        }
+
+        .content {
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px auto;
+            max-width: 1000px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .content img {
+            width: 70%;
+            max-width: 500px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .content img:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            font-size: 2.8em;
+            color: #ff9900;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            
+        }
+
+        p, ul {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            text-align: left;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        .button {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .button:hover {
+            background-color: black;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.1em;
+            margin-top: auto;
+        }
+
+        footer a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: black;
+        }
+
+        
+        .characters {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .character {
+            text-align: center;
+            width: 200px;
+            margin: 15px;
+        }
+
+        .character img {
+            width: 100%;
+            max-width: 180px;
+            border-radius: 10px;
+        }
+
+       
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>SpongeBob SquarePants</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#characters">Characters</a>
+        <a href="#episodes">Episodes</a>
+    </nav>
+
+    <!-- About Section -->
+    <div class="content" id="about">
+        <img src="GROUP.webp" alt="spongebob">
+        <h2>Welcome to the Bikini Bottom </h2>
+        <p>The Krusty Krab is the heart of Bikini Bottom, where the most delicious Krabby Patties are made.
+           This fast-food restaurant, shaped like a giant crab trap, has been the top eatery in town for years.
+           The Krusty Krab is run by Mr. Krabs, a money-obsessed crab who would do anything to make a profit.
+           Despite his greed, he’s still somewhat of a lovable character, especially when it comes to his secret
+           formula for the Krabby Patty, which he guards with his life. The restaurant’s most enthusiastic employee
+           is SpongeBob SquarePants, who works as the fry cook. SpongeBob loves his job more than anything, flipping
+           Krabby Patties with a big smile on his face. His motto, “I’m ready, I’m ready, I’m ready!” is his way of
+           expressing his unending optimism and determination. The Krusty Krab is always busy with customers lining
+           up for a taste of SpongeBob’s perfect patties, but it's also the setting for a lot of comedic mishaps,
+           especially when Plankton, the owner of the rival Chum Bucket, comes up with his latest scheme to steal
+           the secret formula.</p>
+    </div>
+
+    <!-- Characters Section -->
+    <div class="content" id="characters">
+        <h2>Main Characters</h2>
+        <div class="characters">
+            <div class="character">
+                <img src="spongebob.webp" alt="spongebob">
+                <p><strong>SpongeBob SquarePants</strong></p>
+                <p>The cheerful sea sponge who is always ready for adventure!</p>
+            </div>
+            <div class="character">
+                <img src="patrick star.webp" alt="patrick">
+                <p><strong>Patrick Star</strong></p>
+                <p>SpongeBob’s best friend—lazy but loyal and always up for fun.</p>
+            </div>
+            <div class="character">
+                <img src="Squidward Tentacles.webp" alt="Squidward">
+                <p><strong>Squidward Tentacles</strong></p>
+                <p>The grumpy, artsy neighbor who would rather relax than be around SpongeBob.</p>
+            </div>
+            <div class="character">
+                <img src="Mr. Krabs.webp" alt="Mr. Krabs">
+                <p><strong>Mr. Krabs</strong></p>
+                <p>The money-loving owner of the Krusty Krab.</p>
+            </div>
+            <div class="character">
+                <img src="Plankton.webp" alt="Plankton">
+                <p><strong>Plankton</strong></p>
+                <p>The evil genius trying to steal the Krabby Patty formula.</p>
+            </div>
+            <div class="character">
+                <img src="Sandy Cheeks.webp" alt="Sandy Cheeks">
+                <p><strong>Sandy Cheeks</strong></p>
+                <p>The adventurous squirrel from Texas who loves karate!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Episodes Section -->
+    <div class="content" id="episodes">
+      <!-- Episodes Section -->
+
+   <!-- SpongeBob Movies Section -->
+<div class="content" id="movies">
+    <h2>Watch *SpongeBob SquarePants* Movies on YouTube</h2>
+    <ul>
+        <li><strong>The SpongeBob SquarePants Movie (2014)</strong>  
+            <br><a href="https://youtu.be/1M2UNftLFs4" target="_blank" class="button">Watch on YouTube</a>
+        </li>
+        <li><strong>The SpongeBob Movie: Sponge Out of Water (2015)</strong>  
+            <br><a href="https://youtu.be/G7dnYurGOMU" target="_blank" class="button">Watch on YouTube</a>
+        </li>
+        <li><strong>The SpongeBob Movie: Sponge on the Run (2016)</strong>  
+            <br><a href="https://youtu.be/Xy7tbewCb68" target="_blank" class="button">Watch on YouTube</a>
+        </li>
+        <li><strong>Sponge On The Run (2017)</strong>
+            <br><a href=https://youtu.be/KK7BUrVYuXk?list" target="_blank" class="button">Watch on YouTube</a>
+        </li>
+    </ul>
+</div>
